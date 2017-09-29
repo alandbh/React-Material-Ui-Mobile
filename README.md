@@ -1,3 +1,9 @@
+## This is a PWA experiment
+
+This is a front-end of a simple web app for mobile devices. I'm starting to learn about PWA - [Progressive Web App](https://developers.google.com/web/progressive-web-apps/) and this app contains some screens that I've designed following Material Design principles.
+
+## Wes, I've used all the magic of Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
