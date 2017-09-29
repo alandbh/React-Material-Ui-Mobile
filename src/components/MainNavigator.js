@@ -1,6 +1,9 @@
 //importando o React (obrigatório)
 import React, { Component } from 'react';
 
+import { BrowserRouter, Link } from 'react-router-dom';
+
+
 // importando imagens (logotipo, avatar e p padrao)
 import logo from './img/logo-site-white.svg';
 import patternPortal from './img/patterns/4p.png';
@@ -28,7 +31,8 @@ const stylePaperDrawer = {
   width: '100%',
   margin: 0,
   display: 'inline-block',
-  backgroundImage: 'url(' + patternPortal + ')',
+  //backgroundImage: 'url(' + patternPortal + ')',
+  backgroundColor: '#c00',
   alignItems: 'center',
   overflowX: 'hidden',
 };
@@ -79,8 +83,13 @@ class MainNavigator extends Component {
                   </div>
               </Paper>
               <List>
-                <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
-                <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
+                <Link to="list">
+                  <ListItem primaryText="List" leftIcon={<ContentInbox />} />
+                </Link>
+                  <ListItem leftIcon={<ActionGrade />} >
+                <Link to="profile">Profile
+                </Link>
+                  </ListItem>
                 <ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
                 <ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
                 <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
